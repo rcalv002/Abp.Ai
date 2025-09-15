@@ -50,6 +50,7 @@ using Volo.Abp.Account.Pro.Public.Blazor.Server;
 using Volo.Abp.Account.Public.Web;
 using Volo.Abp.Account.Public.Web.ExternalProviders;
 using Volo.Abp.Account.Public.Web.Impersonation;
+using Volo.Abp.AspNetCore.VirtualFileSystem;
 using Volo.Abp.Identity.Pro.Blazor;
 using Volo.Abp.Identity.Pro.Blazor.Server;
 using Volo.Abp.AuditLogging.Blazor.Server;
@@ -172,12 +173,17 @@ public class AbpSolution3BlazorModule : AbpModule
             {
                 options.DisableTransportSecurityRequirement = true;
             });
-            
+
             Configure<ForwardedHeadersOptions>(options =>
             {
                 options.ForwardedHeaders = ForwardedHeaders.XForwardedProto;
             });
         }
+
+        Configure<AbpAspNetCoreContentOptions>(options =>
+        {
+            options.ContentTypeMaps.Add(".mjs", "application/javascript");
+        });
 
         ConfigureAuthentication(context);
         ConfigureUrls(configuration);
@@ -204,7 +210,7 @@ public class AbpSolution3BlazorModule : AbpModule
             options.PrivacyPolicyUrl = "/PrivacyPolicy";
         });
     }
-    
+
     private void ConfigureAuthentication(ServiceConfigurationContext context)
     {
         context.Services.ForwardIdentityAuthenticationForBearer(OpenIddictValidationAspNetCoreDefaults.AuthenticationScheme);
@@ -328,7 +334,7 @@ public class AbpSolution3BlazorModule : AbpModule
             options.MenuContributors.Add(new AbpSolution3MenuContributor());
         });
     }
-    
+
     private void ConfigureTheme()
     {
         Configure<LeptonXThemeOptions>(options =>
