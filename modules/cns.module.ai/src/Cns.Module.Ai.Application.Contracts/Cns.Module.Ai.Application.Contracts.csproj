@@ -12,6 +12,12 @@
     <PackageReference Include="Volo.Abp.Ddd.Application.Contracts" Version="9.3.2" />
     <PackageReference Include="Volo.Abp.Authorization" Version="9.3.2" />
     <ProjectReference Include="..\Cns.Module.Ai.Domain.Shared\Cns.Module.Ai.Domain.Shared.csproj" />
+    <PackageReference Include="OllamaSharp" Version="5.1.18" />
+    <PackageReference Include="Microsoft.Extensions.AI" Version="9.9.0" />
+    <PackageReference Include="Microsoft.SemanticKernel.Core" Version="1.61.0" />
+    <PackageReference Include="PdfPig" Version="0.1.10" />
+    <PackageReference Include="System.Linq.Async" Version="6.0.1" />
+    <PackageReference Include="Microsoft.SemanticKernel.Connectors.SqliteVec" Version="1.61.0-preview" />
   </ItemGroup>
 
 </Project>

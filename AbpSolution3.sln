@@ -59,6 +59,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cns.Module.Ai.HttpApi", "mo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cns.Module.Ai.HttpApi.Client", "modules\cns.module.ai\src\Cns.Module.Ai.HttpApi.Client\Cns.Module.Ai.HttpApi.Client.csproj", "{39A0ECCD-C004-B203-54A0-740FEC04217A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatApp1", "ChatApp1\ChatApp1.csproj", "{03070984-1F1A-B84F-A7D5-04506B78F965}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -157,6 +159,10 @@ Global
 		{39A0ECCD-C004-B203-54A0-740FEC04217A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{39A0ECCD-C004-B203-54A0-740FEC04217A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{39A0ECCD-C004-B203-54A0-740FEC04217A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03070984-1F1A-B84F-A7D5-04506B78F965}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03070984-1F1A-B84F-A7D5-04506B78F965}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03070984-1F1A-B84F-A7D5-04506B78F965}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03070984-1F1A-B84F-A7D5-04506B78F965}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -187,6 +193,7 @@ Global
 		{D4AEBDAC-D207-A422-36B3-B644DB44C894} = {865536CE-1AE4-4376-8590-55F43342CAE2}
 		{86FBC9F6-9B1C-7AC9-22DD-F17EA88CA483} = {865536CE-1AE4-4376-8590-55F43342CAE2}
 		{39A0ECCD-C004-B203-54A0-740FEC04217A} = {865536CE-1AE4-4376-8590-55F43342CAE2}
+		{03070984-1F1A-B84F-A7D5-04506B78F965} = {865536CE-1AE4-4376-8590-55F43342CAE2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {28315BFD-90E7-4E14-A2EA-F3D23AF4126F}

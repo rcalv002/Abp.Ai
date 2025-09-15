@@ -16,7 +16,7 @@ public class AiMenuContributor : IMenuContributor
     private Task ConfigureMainMenuAsync(MenuConfigurationContext context)
     {
         //Add main menu items.
-        context.Menu.AddItem(new ApplicationMenuItem(AiMenus.Prefix, displayName: "Ai", "/Ai", icon: "fa fa-globe"));
+        context.Menu.AddItem(new ApplicationMenuItem(AiMenus.Prefix, displayName: "Ai", "/Chat", icon: "fa fa-globe"));
 
         return Task.CompletedTask;
     }

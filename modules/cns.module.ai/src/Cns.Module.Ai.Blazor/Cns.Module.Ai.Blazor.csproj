@@ -1,6 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk.Razor">
 
-  <Import Project="..\..\common.props"/>
+  <Import Project="..\..\common.props" />
 
   <PropertyGroup>
     <TargetFramework>net9.0</TargetFramework>
@@ -13,6 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Cns.Module.Ai.Application.Contracts\Cns.Module.Ai.Application.Contracts.csproj"/>
+    <ProjectReference Include="..\Cns.Module.Ai.Application.Contracts\Cns.Module.Ai.Application.Contracts.csproj" />
+    <ProjectReference Include="..\Cns.Module.Ai.Application\Cns.Module.Ai.Application.csproj" />
   </ItemGroup>
 </Project>

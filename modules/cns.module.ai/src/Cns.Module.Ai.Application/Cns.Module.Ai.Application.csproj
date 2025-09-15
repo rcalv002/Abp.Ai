@@ -13,6 +13,12 @@
     <PackageReference Include="Volo.Abp.Ddd.Application" Version="9.3.2" />
     <ProjectReference Include="..\Cns.Module.Ai.Application.Contracts\Cns.Module.Ai.Application.Contracts.csproj" />
     <ProjectReference Include="..\Cns.Module.Ai.Domain\Cns.Module.Ai.Domain.csproj" />
+    <PackageReference Include="OllamaSharp" Version="5.1.18" />
+    <PackageReference Include="Microsoft.Extensions.AI" Version="9.9.0" />
+    <PackageReference Include="Microsoft.SemanticKernel.Core" Version="1.61.0" />
+    <PackageReference Include="PdfPig" Version="0.1.10" />
+    <PackageReference Include="System.Linq.Async" Version="6.0.1" />
+    <PackageReference Include="Microsoft.SemanticKernel.Connectors.SqliteVec" Version="1.61.0-preview" />
   </ItemGroup>
 
 </Project>
