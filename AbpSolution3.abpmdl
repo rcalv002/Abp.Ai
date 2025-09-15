@@ -1,0 +1,117 @@
+{
+  "template": "app",
+  "imports": {
+    "Volo.Abp.LeptonXTheme": {
+      "version": "4.3.2",
+      "isInstalled": true
+    },
+    "Volo.Abp.TextTemplateManagement": {
+      "version": "9.3.2",
+      "isInstalled": true
+    },
+    "Volo.Abp.LanguageManagement": {
+      "version": "9.3.2",
+      "isInstalled": true
+    },
+    "Volo.Abp.OpenIddict.Pro": {
+      "version": "9.3.2",
+      "isInstalled": true
+    },
+    "Volo.Abp.Gdpr": {
+      "version": "9.3.2",
+      "isInstalled": true
+    },
+    "Volo.Abp.AuditLogging.Pro": {
+      "version": "9.3.2",
+      "isInstalled": true
+    },
+    "Volo.Saas": {
+      "version": "9.3.2",
+      "isInstalled": true
+    },
+    "Volo.Abp.Identity.Pro": {
+      "version": "9.3.2",
+      "isInstalled": true
+    },
+    "Volo.Abp.Account.Pro": {
+      "version": "9.3.2",
+      "isInstalled": true
+    },
+    "Volo.Abp.SettingManagement": {
+      "version": "9.3.2",
+      "isInstalled": true
+    },
+    "Volo.Abp.PermissionManagement": {
+      "version": "9.3.2",
+      "isInstalled": true
+    },
+    "Volo.Abp.FeatureManagement": {
+      "version": "9.3.2",
+      "isInstalled": true
+    }
+  },
+  "folders": {
+    "items": {
+      "src": {},
+      "test": {}
+    }
+  },
+  "packages": {
+    "AbpSolution3.Application": {
+      "path": "src/AbpSolution3.Application/AbpSolution3.Application.abppkg",
+      "folder": "src"
+    },
+    "AbpSolution3.Application.Tests": {
+      "path": "test/AbpSolution3.Application.Tests/AbpSolution3.Application.Tests.abppkg",
+      "folder": "test"
+    },
+    "AbpSolution3.Domain.Shared": {
+      "path": "src/AbpSolution3.Domain.Shared/AbpSolution3.Domain.Shared.abppkg",
+      "folder": "src"
+    },
+    "AbpSolution3.Application.Contracts": {
+      "path": "src/AbpSolution3.Application.Contracts/AbpSolution3.Application.Contracts.abppkg",
+      "folder": "src"
+    },
+    "AbpSolution3.HttpApi": {
+      "path": "src/AbpSolution3.HttpApi/AbpSolution3.HttpApi.abppkg",
+      "folder": "src"
+    },
+    "AbpSolution3.HttpApi.Client": {
+      "path": "src/AbpSolution3.HttpApi.Client/AbpSolution3.HttpApi.Client.abppkg",
+      "folder": "src"
+    },
+    "AbpSolution3.EntityFrameworkCore.Tests": {
+      "path": "test/AbpSolution3.EntityFrameworkCore.Tests/AbpSolution3.EntityFrameworkCore.Tests.abppkg",
+      "folder": "test"
+    },
+    "AbpSolution3.EntityFrameworkCore": {
+      "path": "src/AbpSolution3.EntityFrameworkCore/AbpSolution3.EntityFrameworkCore.abppkg",
+      "folder": "src"
+    },
+    "AbpSolution3.TestBase": {
+      "path": "test/AbpSolution3.TestBase/AbpSolution3.TestBase.abppkg",
+      "folder": "test"
+    },
+    "AbpSolution3.Domain.Tests": {
+      "path": "test/AbpSolution3.Domain.Tests/AbpSolution3.Domain.Tests.abppkg",
+      "folder": "test"
+    },
+    "AbpSolution3.HttpApi.Client.ConsoleTestApp": {
+      "path": "test/AbpSolution3.HttpApi.Client.ConsoleTestApp/AbpSolution3.HttpApi.Client.ConsoleTestApp.abppkg",
+      "folder": "test"
+    },
+    "AbpSolution3.DbMigrator": {
+      "path": "src/AbpSolution3.DbMigrator/AbpSolution3.DbMigrator.abppkg",
+      "folder": "src"
+    },
+    "AbpSolution3.Blazor": {
+      "path": "src/AbpSolution3.Blazor/AbpSolution3.Blazor.abppkg",
+      "folder": "src"
+    },
+    "AbpSolution3.Domain": {
+      "path": "src/AbpSolution3.Domain/AbpSolution3.Domain.abppkg",
+      "folder": "src"
+    }
+  }
+}

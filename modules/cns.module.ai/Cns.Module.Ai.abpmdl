@@ -1,0 +1,66 @@
+{
+  "folders": {
+    "items": {
+      "src": {},
+      "test": {}
+    }
+  },
+  "packages": {
+    "Cns.Module.Ai.Domain": {
+      "path": "src/Cns.Module.Ai.Domain/Cns.Module.Ai.Domain.abppkg",
+      "folder": "src"
+    },
+    "Cns.Module.Ai.Application.Contracts": {
+      "path": "src/Cns.Module.Ai.Application.Contracts/Cns.Module.Ai.Application.Contracts.abppkg",
+      "folder": "src"
+    },
+    "Cns.Module.Ai.Application": {
+      "path": "src/Cns.Module.Ai.Application/Cns.Module.Ai.Application.abppkg",
+      "folder": "src"
+    },
+    "Cns.Module.Ai.EntityFrameworkCore": {
+      "path": "src/Cns.Module.Ai.EntityFrameworkCore/Cns.Module.Ai.EntityFrameworkCore.abppkg",
+      "folder": "src"
+    },
+    "Cns.Module.Ai.HttpApi": {
+      "path": "src/Cns.Module.Ai.HttpApi/Cns.Module.Ai.HttpApi.abppkg",
+      "folder": "src"
+    },
+    "Cns.Module.Ai.HttpApi.Client": {
+      "path": "src/Cns.Module.Ai.HttpApi.Client/Cns.Module.Ai.HttpApi.Client.abppkg",
+      "folder": "src"
+    },
+    "Cns.Module.Ai.Blazor": {
+      "path": "src/Cns.Module.Ai.Blazor/Cns.Module.Ai.Blazor.abppkg",
+      "folder": "src"
+    },
+    "Cns.Module.Ai.Blazor.Server": {
+      "path": "src/Cns.Module.Ai.Blazor.Server/Cns.Module.Ai.Blazor.Server.abppkg",
+      "folder": "src"
+    },
+    "Cns.Module.Ai.TestBase": {
+      "path": "test/Cns.Module.Ai.TestBase/Cns.Module.Ai.TestBase.abppkg",
+      "folder": "test"
+    },
+    "Cns.Module.Ai.EntityFrameworkCore.Tests": {
+      "path": "test/Cns.Module.Ai.EntityFrameworkCore.Tests/Cns.Module.Ai.EntityFrameworkCore.Tests.abppkg",
+      "folder": "test"
+    },
+    "Cns.Module.Ai.Domain.Tests": {
+      "path": "test/Cns.Module.Ai.Domain.Tests/Cns.Module.Ai.Domain.Tests.abppkg",
+      "folder": "test"
+    },
+    "Cns.Module.Ai.Application.Tests": {
+      "path": "test/Cns.Module.Ai.Application.Tests/Cns.Module.Ai.Application.Tests.abppkg",
+      "folder": "test"
+    },
+    "Cns.Module.Ai.Domain.Shared": {
+      "path": "src/Cns.Module.Ai.Domain.Shared/Cns.Module.Ai.Domain.Shared.abppkg",
+      "folder": "src"
+    },
+    "Cns.Module.Ai.Installer": {
+       "path": "src/Cns.Module.Ai.Installer/Cns.Module.Ai.Installer.abppkg",
+       "folder": "src"
+    }
+  }
+}

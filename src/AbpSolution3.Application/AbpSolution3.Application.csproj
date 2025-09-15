@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <RootNamespace>AbpSolution3</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AbpSolution3.Domain\AbpSolution3.Domain.csproj" />
+    <ProjectReference Include="..\AbpSolution3.Application.Contracts\AbpSolution3.Application.Contracts.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.PermissionManagement.Application" Version="9.3.2" />
+    <PackageReference Include="Volo.Abp.FeatureManagement.Application" Version="9.3.2" />
+    <PackageReference Include="Volo.Abp.SettingManagement.Application" Version="9.3.2" />
+    <PackageReference Include="Volo.Abp.Account.Pro.Public.Application" Version="9.3.2" />
+    <PackageReference Include="Volo.Abp.Account.Pro.Admin.Application" Version="9.3.2" />
+    <PackageReference Include="Volo.Abp.Identity.Pro.Application" Version="9.3.2" />
+    <PackageReference Include="Volo.Saas.Host.Application" Version="9.3.2" />
+    <PackageReference Include="Volo.Abp.AuditLogging.Application" Version="9.3.2" />
+    <PackageReference Include="Volo.Abp.OpenIddict.Pro.Application" Version="9.3.2" />
+    <PackageReference Include="Volo.Abp.LanguageManagement.Application" Version="9.3.2" />
+    <PackageReference Include="Volo.Abp.TextTemplateManagement.Application" Version="9.3.2" />
+    <PackageReference Include="Volo.Abp.Gdpr.Application" Version="9.3.2" />
+    <PackageReference Include="Volo.Abp.LeptonXTheme.Management.Application" Version="4.3.2" />
+  </ItemGroup>
+
+</Project>

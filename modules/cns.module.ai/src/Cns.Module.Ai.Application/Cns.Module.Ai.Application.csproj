@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <RootNamespace>Cns.Module.Ai</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.AutoMapper" Version="9.3.2" />
+    <PackageReference Include="Volo.Abp.Ddd.Application" Version="9.3.2" />
+    <ProjectReference Include="..\Cns.Module.Ai.Application.Contracts\Cns.Module.Ai.Application.Contracts.csproj" />
+    <ProjectReference Include="..\Cns.Module.Ai.Domain\Cns.Module.Ai.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

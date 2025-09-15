@@ -1,0 +1,66 @@
+{
+  "id": "5eaba7e2-9689-4d4c-aa6c-80b873e7ccd6",
+  "template": "app",
+  "versions": {
+    "LeptonX": "4.3.2",
+    "AbpFramework": "9.3.2",
+    "AbpCommercial": "9.3.2",
+    "AbpStudio": "1.2.2",
+    "TargetDotnetFramework": "net9.0"
+  },
+  "modules": {
+    "AbpSolution3": {
+      "path": "AbpSolution3.abpmdl",
+      "folder": "main"
+    },
+    "Cns.Module.Ai": {
+      "path": "modules/cns.module.ai/Cns.Module.Ai.abpmdl",
+      "folder": "modules"
+    }
+  },
+  "runProfiles": {
+    "Default": {
+      "path": "etc/abp-studio/run-profiles/Default.abprun.json"
+    }
+  },
+  "options": {
+    "httpRequests": {
+      "ignoredUrls": []
+    }
+  },
+  "creatingStudioConfiguration": {
+    "template": "app",
+    "createdAbpStudioVersion": "1.2.2",
+    "tiered": "false",
+    "runInstallLibs": "true",
+    "useLocalReferences": "false",
+    "multiTenancy": "true",
+    "includeTests": "true",
+    "kubernetesConfiguration": "false",
+    "uiFramework": "blazor-server",
+    "mobileFramework": "none",
+    "distributedEventBus": "none",
+    "databaseProvider": "ef",
+    "runDbMigrator": "true",
+    "databaseManagementSystem": "sqlserver",
+    "separateTenantSchema": "true",
+    "createInitialMigration": "true",
+    "theme": "leptonx",
+    "themeStyle": "system",
+    "themeMenuPlacement": "side",
+    "publicWebsite": "false",
+    "optionalModules": "GDPR TextTemplateManagement LanguageManagement AuditLogging OpenIddictAdmin",
+    "socialLogin": "false",
+    "selectedLanguages": [
+      "English"
+    ],
+    "defaultLanguage": "English",
+    "createCommand": "abp new AbpSolution3 -t app --ui-framework blazor-server --database-provider ef --database-management-system sqlserver --theme leptonx --separate-tenant-schema  --without-cms-kit --dont-run-bundling --no-social-logins -no-file-management"
+  },
+  "folders": {
+    "items": {
+      "main": {},
+      "modules": {}
+    }
+  }
+}

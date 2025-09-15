@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <RootNamespace>Cns.Module.Ai</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.13.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Cns.Module.Ai.Domain\Cns.Module.Ai.Domain.csproj" />
+    <ProjectReference Include="..\Cns.Module.Ai.TestBase\Cns.Module.Ai.TestBase.csproj" />
+  </ItemGroup>
+
+
+</Project>
