@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+using Cns.Module.Ai.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using Volo.Abp.Data;
 using Volo.Abp.MultiTenancy;
 
@@ -17,5 +18,7 @@ public class AbpSolution3DbContext : AbpSolution3DbContextBase<AbpSolution3DbCon
         builder.SetMultiTenancySide(MultiTenancySides.Both);
 
         base.OnModelCreating(builder);
+
+        builder.ConfigureAi();
     }
 }

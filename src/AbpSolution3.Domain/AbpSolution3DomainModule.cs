@@ -1,3 +1,4 @@
+using Cns.Module.Ai;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 using AbpSolution3.Localization;
@@ -26,6 +27,7 @@ using Volo.Abp.LeptonXTheme.Management;
 namespace AbpSolution3;
 
 [DependsOn(
+    typeof(AiDomainModule),
     typeof(AbpSolution3DomainSharedModule),
     typeof(AbpAuditLoggingDomainModule),
     typeof(AbpCachingModule),

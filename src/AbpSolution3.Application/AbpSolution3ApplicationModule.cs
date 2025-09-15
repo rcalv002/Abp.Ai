@@ -1,4 +1,5 @@
-﻿using Volo.Abp.PermissionManagement;
+using Cns.Module.Ai;
+using Volo.Abp.PermissionManagement;
 using Volo.Abp.SettingManagement;
 using Volo.Abp.Account;
 using Volo.Abp.Identity;
@@ -16,6 +17,7 @@ using Volo.Abp.LeptonXTheme.Management;
 namespace AbpSolution3;
 
 [DependsOn(
+    typeof(AiApplicationModule),
     typeof(AbpSolution3DomainModule),
     typeof(AbpSolution3ApplicationContractsModule),
     typeof(AbpPermissionManagementApplicationModule),

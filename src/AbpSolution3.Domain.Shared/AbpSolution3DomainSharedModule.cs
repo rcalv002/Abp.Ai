@@ -1,3 +1,4 @@
+using Cns.Module.Ai;
 using AbpSolution3.Localization;
 using Volo.Abp.AuditLogging;
 using Volo.Abp.BackgroundJobs;
@@ -22,6 +23,7 @@ using Volo.Abp.LeptonXTheme.Management;
 namespace AbpSolution3;
 
 [DependsOn(
+    typeof(AiDomainSharedModule),
     typeof(AbpAuditLoggingDomainSharedModule),
     typeof(AbpBackgroundJobsDomainSharedModule),
     typeof(AbpFeatureManagementDomainSharedModule),

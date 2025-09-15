@@ -1,18 +1,15 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
-
+<Project Sdk="Microsoft.NET.Sdk">
   <Import Project="..\..\common.props" />
-
   <PropertyGroup>
     <TargetFramework>net9.0</TargetFramework>
     <Nullable>enable</Nullable>
     <RootNamespace>AbpSolution3</RootNamespace>
   </PropertyGroup>
-
   <ItemGroup>
     <ProjectReference Include="..\AbpSolution3.Domain\AbpSolution3.Domain.csproj" />
     <ProjectReference Include="..\AbpSolution3.Application.Contracts\AbpSolution3.Application.Contracts.csproj" />
+    <ProjectReference Include="../../modules/cns.module.ai/src/Cns.Module.Ai.Application/Cns.Module.Ai.Application.csproj" />
   </ItemGroup>
-
   <ItemGroup>
     <PackageReference Include="Volo.Abp.PermissionManagement.Application" Version="9.3.2" />
     <PackageReference Include="Volo.Abp.FeatureManagement.Application" Version="9.3.2" />
@@ -28,5 +25,4 @@
     <PackageReference Include="Volo.Abp.Gdpr.Application" Version="9.3.2" />
     <PackageReference Include="Volo.Abp.LeptonXTheme.Management.Application" Version="4.3.2" />
   </ItemGroup>
-
 </Project>

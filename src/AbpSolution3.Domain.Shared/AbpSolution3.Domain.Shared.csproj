@@ -1,14 +1,11 @@
 <Project Sdk="Microsoft.NET.Sdk">
-
   <Import Project="..\..\common.props" />
-
   <PropertyGroup>
     <TargetFramework>net9.0</TargetFramework>
     <Nullable>enable</Nullable>
     <RootNamespace>AbpSolution3</RootNamespace>
     <GenerateEmbeddedFilesManifest>true</GenerateEmbeddedFilesManifest>
   </PropertyGroup>
-
   <ItemGroup>
     <PackageReference Include="Volo.Abp.BackgroundJobs.Domain.Shared" Version="9.3.2" />
     <PackageReference Include="Volo.Abp.AuditLogging.Domain.Shared" Version="9.3.2" />
@@ -17,8 +14,8 @@
     <PackageReference Include="Volo.Abp.SettingManagement.Domain.Shared" Version="9.3.2" />
     <PackageReference Include="Volo.Abp.BlobStoring.Database.Domain.Shared" Version="9.3.2" />
     <PackageReference Include="Volo.Abp.GlobalFeatures" Version="9.3.2" />
+    <ProjectReference Include="../../modules/cns.module.ai/src/Cns.Module.Ai.Domain.Shared/Cns.Module.Ai.Domain.Shared.csproj" />
   </ItemGroup>
-
   <ItemGroup>
     <PackageReference Include="Volo.Abp.OpenIddict.Pro.Domain.Shared" Version="9.3.2" />
     <PackageReference Include="Volo.Abp.Identity.Pro.Domain.Shared" Version="9.3.2" />
@@ -28,14 +25,11 @@
     <PackageReference Include="Volo.Abp.Gdpr.Domain.Shared" Version="9.3.2" />
     <PackageReference Include="Volo.Abp.LeptonXTheme.Management.Domain.Shared" Version="4.3.2" />
   </ItemGroup>
-
   <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.FileProviders.Embedded" Version="9.0.5" />
   </ItemGroup>
-
   <ItemGroup>
     <EmbeddedResource Include="Localization\AbpSolution3\*.json" />
     <Content Remove="Localization\AbpSolution3\*.json" />
   </ItemGroup>
-
 </Project>

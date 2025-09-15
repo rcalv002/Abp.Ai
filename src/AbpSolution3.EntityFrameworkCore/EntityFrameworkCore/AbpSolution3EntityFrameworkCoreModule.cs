@@ -1,4 +1,5 @@
-﻿using System;
+using Cns.Module.Ai.EntityFrameworkCore;
+using System;
 using Microsoft.Extensions.DependencyInjection;
 using Volo.Abp.Uow;
 using Volo.Abp.AuditLogging.EntityFrameworkCore;
@@ -21,6 +22,7 @@ using Volo.Abp.Studio;
 namespace AbpSolution3.EntityFrameworkCore;
 
 [DependsOn(
+    typeof(AiEntityFrameworkCoreModule),
     typeof(AbpSolution3DomainModule),
     typeof(AbpIdentityProEntityFrameworkCoreModule),
     typeof(AbpOpenIddictProEntityFrameworkCoreModule),

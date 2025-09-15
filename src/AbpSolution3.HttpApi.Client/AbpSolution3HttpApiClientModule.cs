@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+using Cns.Module.Ai;
+using Microsoft.Extensions.DependencyInjection;
 using Volo.Abp.Account;
 using Volo.Abp.Modularity;
 using Volo.Abp.PermissionManagement;
@@ -17,6 +18,7 @@ using Volo.Abp.LeptonXTheme.Management;
 namespace AbpSolution3;
 
 [DependsOn(
+    typeof(AiHttpApiClientModule),
     typeof(AbpSolution3ApplicationContractsModule),
     typeof(AbpPermissionManagementHttpApiClientModule),
     typeof(AbpFeatureManagementHttpApiClientModule),

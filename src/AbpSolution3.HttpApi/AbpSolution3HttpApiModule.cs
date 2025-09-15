@@ -1,4 +1,5 @@
-﻿using Localization.Resources.AbpUi;
+using Cns.Module.Ai;
+using Localization.Resources.AbpUi;
 using AbpSolution3.Localization;
 using Volo.Abp.Account;
 using Volo.Abp.SettingManagement;
@@ -18,6 +19,7 @@ using Volo.Abp.LeptonXTheme.Management;
 namespace AbpSolution3;
 
  [DependsOn(
+    typeof(AiHttpApiModule),
     typeof(AbpSolution3ApplicationContractsModule),
     typeof(AbpPermissionManagementHttpApiModule),
     typeof(AbpSettingManagementHttpApiModule),

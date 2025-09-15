@@ -1,3 +1,7 @@
+using Cns.Module.Ai.Blazor;
+using Cns.Module.Ai.EntityFrameworkCore;
+using Cns.Module.Ai;
+using Cns.Module.Ai.Blazor.Server;
 using System;
 using System.IO;
 using System.Security.Cryptography.X509Certificates;
@@ -73,6 +77,7 @@ using Volo.Abp.Studio.Client.AspNetCore;
 namespace AbpSolution3.Blazor;
 
 [DependsOn(
+    typeof(AiBlazorServerModule),
     typeof(AbpSolution3ApplicationModule),
     typeof(AbpStudioClientAspNetCoreModule),
     typeof(AbpSolution3EntityFrameworkCoreModule),
@@ -279,6 +284,14 @@ public class AbpSolution3BlazorModule : AbpModule
         {
             Configure<AbpVirtualFileSystemOptions>(options =>
             {
+                options.FileSets.ReplaceEmbeddedByPhysical<AiBlazorModule>(Path.Combine(hostingEnvironment.ContentRootPath, string.Format("..{0}..{0}modules{0}cns.module.ai{0}src{0}Cns.Module.Ai.Blazor", Path.DirectorySeparatorChar)));
+                options.FileSets.ReplaceEmbeddedByPhysical<AiEntityFrameworkCoreModule>(Path.Combine(hostingEnvironment.ContentRootPath, string.Format("..{0}..{0}modules{0}cns.module.ai{0}src{0}Cns.Module.Ai.EntityFrameworkCore", Path.DirectorySeparatorChar)));
+                options.FileSets.ReplaceEmbeddedByPhysical<AiHttpApiModule>(Path.Combine(hostingEnvironment.ContentRootPath, string.Format("..{0}..{0}modules{0}cns.module.ai{0}src{0}Cns.Module.Ai.HttpApi", Path.DirectorySeparatorChar)));
+                options.FileSets.ReplaceEmbeddedByPhysical<AiApplicationContractsModule>(Path.Combine(hostingEnvironment.ContentRootPath, string.Format("..{0}..{0}modules{0}cns.module.ai{0}src{0}Cns.Module.Ai.Application.Contracts", Path.DirectorySeparatorChar)));
+                options.FileSets.ReplaceEmbeddedByPhysical<AiDomainSharedModule>(Path.Combine(hostingEnvironment.ContentRootPath, string.Format("..{0}..{0}modules{0}cns.module.ai{0}src{0}Cns.Module.Ai.Domain.Shared", Path.DirectorySeparatorChar)));
+                options.FileSets.ReplaceEmbeddedByPhysical<AiDomainModule>(Path.Combine(hostingEnvironment.ContentRootPath, string.Format("..{0}..{0}modules{0}cns.module.ai{0}src{0}Cns.Module.Ai.Domain", Path.DirectorySeparatorChar)));
+                options.FileSets.ReplaceEmbeddedByPhysical<AiApplicationModule>(Path.Combine(hostingEnvironment.ContentRootPath, string.Format("..{0}..{0}modules{0}cns.module.ai{0}src{0}Cns.Module.Ai.Application", Path.DirectorySeparatorChar)));
+                options.FileSets.ReplaceEmbeddedByPhysical<AiBlazorServerModule>(Path.Combine(hostingEnvironment.ContentRootPath, string.Format("..{0}..{0}modules{0}cns.module.ai{0}src{0}Cns.Module.Ai.Blazor.Server", Path.DirectorySeparatorChar)));
                 options.FileSets.ReplaceEmbeddedByPhysical<AbpSolution3DomainSharedModule>(Path.Combine(hostingEnvironment.ContentRootPath, $"..{Path.DirectorySeparatorChar}AbpSolution3.Domain.Shared"));
                 options.FileSets.ReplaceEmbeddedByPhysical<AbpSolution3DomainModule>(Path.Combine(hostingEnvironment.ContentRootPath, $"..{Path.DirectorySeparatorChar}AbpSolution3.Domain"));
                 options.FileSets.ReplaceEmbeddedByPhysical<AbpSolution3ApplicationContractsModule>(Path.Combine(hostingEnvironment.ContentRootPath, $"..{Path.DirectorySeparatorChar}AbpSolution3.Application.Contracts"));

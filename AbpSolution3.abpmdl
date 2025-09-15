@@ -48,6 +48,10 @@
     "Volo.Abp.FeatureManagement": {
       "version": "9.3.2",
       "isInstalled": true
+    },
+    "Cns.Module.Ai": {
+      "path": "modules/cns.module.ai/Cns.Module.Ai.abpmdl",
+      "isInstalled": true
     }
   },
   "folders": {

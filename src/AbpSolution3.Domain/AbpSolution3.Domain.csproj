@@ -1,17 +1,14 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
-
+<Project Sdk="Microsoft.NET.Sdk">
   <Import Project="..\..\common.props" />
-
   <PropertyGroup>
     <TargetFramework>net9.0</TargetFramework>
     <Nullable>enable</Nullable>
     <RootNamespace>AbpSolution3</RootNamespace>
   </PropertyGroup>
-
   <ItemGroup>
     <ProjectReference Include="..\AbpSolution3.Domain.Shared\AbpSolution3.Domain.Shared.csproj" />
+    <ProjectReference Include="../../modules/cns.module.ai/src/Cns.Module.Ai.Domain/Cns.Module.Ai.Domain.csproj" />
   </ItemGroup>
-
   <ItemGroup>
     <PackageReference Include="Volo.Abp.Emailing" Version="9.3.2" />
     <PackageReference Include="Volo.Abp.Caching" Version="9.3.2" />
@@ -23,7 +20,6 @@
     <PackageReference Include="Volo.Abp.SettingManagement.Domain" Version="9.3.2" />
     <PackageReference Include="Volo.Abp.BlobStoring.Database.Domain" Version="9.3.2" />
   </ItemGroup>
-
   <ItemGroup>
     <PackageReference Include="Volo.Abp.OpenIddict.Pro.Domain" Version="9.3.2" />
     <PackageReference Include="Volo.Abp.Identity.Pro.Domain" Version="9.3.2" />
@@ -34,5 +30,4 @@
     <PackageReference Include="Volo.Abp.Gdpr.Domain" Version="9.3.2" />
     <PackageReference Include="Volo.Abp.LeptonXTheme.Management.Domain" Version="4.3.2" />
   </ItemGroup>
-
 </Project>
